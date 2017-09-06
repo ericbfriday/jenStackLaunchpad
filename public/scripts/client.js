@@ -19,6 +19,7 @@ function clickyFunction() {
         url: '/toast',
         success: function( response ) {
             console.log('I have a response: ', response );
+            $('#counterDisplay').html( response.counterProperty );
         }
     });
 }
