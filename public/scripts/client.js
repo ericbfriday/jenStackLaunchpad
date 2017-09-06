@@ -1,3 +1,71 @@
+$(document).ready(onReady);
+
+function onReady() {
+    console.log (' onReady loaded');
+    $('#requestButton').on('click', clickyFunction);
+    $.ajax({
+        method: 'GET',
+        url: '/toast',
+        success: function( response ) {
+            console.log('I have a response: ', response);
+        }
+    });
+}
+
+function clickyFunction() {
+    console.log('clickyFunction called');
+    $.ajax({
+        method: 'GET',
+        url: '/toast',
+        success: function( response ) {
+            console.log('I have a response: ', response );
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** First attempt with Dev's code
+ * 
  console.log( 'js' );
 
 $(document).ready( onReady );
